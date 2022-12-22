@@ -1,0 +1,130 @@
+// Dependencies.
+@import "./basics_tools";
+
+// Animations.
+@keyframes text_blink {
+    from {
+        text-shadow: 0 0 0 #fff;
+        color: #343434;
+    } to {
+        text-shadow: 0 0 3px #050541;
+        color: #fff;
+    }
+}
+
+// Crypto currency.
+div.crypto-currency {
+    border-bottom: 1px solid #E5E5E5;
+    transition: 0.4s background-color;
+    padding: 15px 20px 15px 20px;
+    background-color: white;
+    opacity: 0;
+    // Hover effect.
+    &:hover {
+        background-color: rgb(240, 240, 240);
+    }
+    // Responsive.
+    @include responsive_object (0, 399px) {
+        padding: 10px;
+    }
+    // Header.
+    div.header {
+        display: inline-flex;
+        align-items: center;
+        // Icon zone.
+        div.img-zone {
+            box-shadow: 0 0 3px silver;
+            transform: rotate(0);
+            border-radius: 25px;
+            height: 30px;
+            width: 30px;
+        }
+        // Name zone.
+        div.name-zone {
+            margin-left: 10px;
+            // Label representation.
+            label {
+                @include basic_text_design (18px, Roboto, #343434);
+                // Responsive.
+                @include responsive_object (0, 299px) {
+                    font-size: 14px;
+                }
+            }
+            // Hider.
+            div.hider {
+                visibility: visible;
+            }
+        }
+    }
+    // Body.
+    div.body {
+        justify-content: space-between;
+        margin-top: -5px;
+        display: flex;
+        // Left data.
+        div.left-data {
+            border-right: 1px solid #E5E5E5;
+            padding: 5px 5px 5px 42px;
+            width: 100%;
+            // Amount zone.
+            div.amount-zone {
+                // Label representation.
+                label {
+                    @include basic_text_design (15px, Saira, #2A2A2A);
+                    text-shadow: 0 0 0 #fff;
+                    // Responsive.
+                    @include responsive_object (0, 299px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            // Balance zone.
+            div.balance-zone {
+                // Label representation.
+                label {
+                    @include basic_text_design (12px, Saira,#767676);
+                    // Responsive.
+                    @include responsive_object (0, 299px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        // Right data.
+        div.right-data {
+            padding: 5px 5px 5px 8px;
+            width: 100%;
+            // Worth zone.
+            div.worth-zone {
+                // Label representation.
+                label {
+                    @include basic_text_design (15px, Saira, #2A2A2A);
+                    // Responsive.
+                    @include responsive_object (0, 299px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            // Benefice zone.
+            div.benefice-zone {
+                // Gain worth.
+                label#gain {
+                    @include basic_text_design (12px, Saira, #007F00);
+                    // Responsive.
+                    @include responsive_object (0, 299px) {
+                        font-size: 10px;
+                    }
+                }
+                // Hour worth.
+                label#hour {
+                    @include basic_text_design (12px, Saira,#767676);
+                    margin-left: 5px;
+                    // Responsive.
+                    @include responsive_object (0, 299px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

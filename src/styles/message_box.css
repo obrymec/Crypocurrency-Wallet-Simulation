@@ -1,0 +1,112 @@
+div.message-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  bottom: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  opacity: 0; }
+  div.message-box div.msg-blur-effect {
+    background-color: transparent;
+    z-index: 1;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0; }
+  div.message-box div.msg-global-container {
+    transition-property: width, height, opacity;
+    box-shadow: 0 0 8px black;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    display: none;
+    z-index: 1;
+    opacity: 0;
+    width: 0; }
+    div.message-box div.msg-global-container div.msg-title {
+      border-bottom: 1px solid silver;
+      border-top-right-radius: 5px;
+      background-color: #050541;
+      border-top-left-radius: 5px;
+      padding: 3px 5px 5px 5px;
+      position: relative;
+      z-index: 1; }
+      div.message-box div.msg-global-container div.msg-title label {
+        letter-spacing: 1.5px;
+        font-family: Saira;
+        font-size: 14px;
+        user-select: none;
+        color: #FFF;
+        font-weight: bold;
+        animation: 1s textbloom 0ms forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transition: font-size 0.3s; }
+        @media only screen and (min-width: 0) and (max-width: 380px) {
+          div.message-box div.msg-global-container div.msg-title label {
+            font-size: 12px; } }
+    div.message-box div.msg-global-container div.msg-body {
+      padding: 15px 12px 15px 12px;
+      justify-items: stretch;
+      align-items: center;
+      position: relative;
+      display: flex;
+      z-index: 1;
+      gap: 16px; }
+      div.message-box div.msg-global-container div.msg-body div.msg-icon svg {
+        transition-property: height width;
+        opacity: 0; }
+      div.message-box div.msg-global-container div.msg-body div.msg-text {
+        white-space: pre-wrap;
+        margin-top: -4px;
+        width: 100%; }
+        div.message-box div.msg-global-container div.msg-body div.msg-text label {
+          letter-spacing: 1.5px;
+          font-family: Roboto;
+          font-size: 14px;
+          user-select: none;
+          color: #000;
+          transition: font-size 0.3s;
+          display: inline-block; }
+          @media only screen and (min-width: 0) and (max-width: 380px) {
+            div.message-box div.msg-global-container div.msg-body div.msg-text label {
+              font-size: 12px; } }
+    div.message-box div.msg-global-container div.msg-options {
+      padding: 10px 10px 10px 10px;
+      border-top: 0 solid silver;
+      justify-content: end;
+      position: relative;
+      display: none;
+      z-index: 1;
+      gap: 15px; }
+      div.message-box div.msg-global-container div.msg-options button {
+        background-color: #14145c;
+        border-radius: 4px;
+        box-shadow: 0 0 2px #000;
+        padding: 7px 10px 5px 10px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        transition-property: box-shadow, background-color, text-shadow;
+        letter-spacing: 1.5px;
+        font-family: Saira;
+        font-size: 14px;
+        user-select: none;
+        color: #FFF;
+        transition-duration: 0.4s;
+        visibility: hidden;
+        width: 80px;
+        opacity: 0; }
+        div.message-box div.msg-global-container div.msg-options button:hover {
+          background-color: #050541;
+          box-shadow: 0 0 5px #000;
+          text-shadow: 0 0 3px; }
+        @media only screen and (min-width: 0) and (max-width: 380px) {
+          div.message-box div.msg-global-container div.msg-options button {
+            padding: 5px 10px 5px 10px;
+            font-size: 12px; } }

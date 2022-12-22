@@ -1,0 +1,24 @@
+// Dependencies.
+@import "./basics_tools";
+
+// Activities dropdown menu.
+div.dropdown-menu {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: rgba(20, 20, 20, 0.8);
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    // Activities crypto currency list.
+    div.dropdown-rows {
+        background-color: rgb(245, 245, 245);
+        overflow-y: auto;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}

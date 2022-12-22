@@ -1,0 +1,75 @@
+@keyframes bloom {
+  0% {
+    box-shadow: 0 0 0 #fff; }
+  10% {
+    box-shadow: 0 0 8px #050541; }
+  100% {
+    box-shadow: 0 0 8px #fff; } }
+@keyframes translate_up {
+  from {
+    transform: translateY(140%); }
+  to {
+    transform: translateY(0); } }
+div.menubar {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  justify-content: space-between;
+  transform: translateY(140%);
+  background-color: #FFFFFF;
+  padding: 8px 8px 8px 8px;
+  display: inline-flex;
+  align-items: stretch;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  gap: 5px;
+  left: 0; }
+  @media only screen and (min-width: 0) and (max-width: 399px) {
+    div.menubar {
+      padding: 5px 5px 5px 5px;
+      gap: 2px; } }
+  div.menubar div.menu-option {
+    width: 100%;
+    opacity: 0; }
+    div.menubar div.menu-option div.icon-zone svg#option-icon {
+      cursor: pointer; }
+      @media only screen and (min-width: 0) and (max-width: 399px) {
+        div.menubar div.menu-option div.icon-zone svg#option-icon {
+          height: 18px;
+          width: 18px; } }
+    div.menubar div.menu-option div.text-zone label#option-text {
+      letter-spacing: 1.5px;
+      font-family: Roboto;
+      font-size: 14px;
+      user-select: none;
+      color: #8D8D8D;
+      user-select: none;
+      font-weight: 400;
+      cursor: pointer; }
+      @media only screen and (min-width: 0) and (max-width: 399px) {
+        div.menubar div.menu-option div.text-zone label#option-text {
+          font-size: 10px; } }
+  div.menubar div.wallet-option {
+    background-color: #050541;
+    box-shadow: 0 0 0 #FFFFFF;
+    justify-content: center;
+    border-radius: 25px;
+    align-items: center;
+    transform: scale(0);
+    display: flex;
+    padding: 8px;
+    height: 25px;
+    width: 25px;
+    opacity: 1; }
+    @media only screen and (min-width: 0) and (max-width: 399px) {
+      div.menubar div.wallet-option {
+        border-radius: 20px;
+        height: 20px;
+        width: 20px; } }
+    div.menubar div.wallet-option div.icon-zone {
+      transform: translateY(2px); }
+      @media only screen and (min-width: 0) and (max-width: 399px) {
+        div.menubar div.wallet-option div.icon-zone svg#option-icon {
+          transform: translateY(-0.5px);
+          height: 22px;
+          width: 22px; } }

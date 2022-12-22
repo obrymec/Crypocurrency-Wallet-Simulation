@@ -1,0 +1,52 @@
+div.wallet-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(20, 20, 20, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
+  div.wallet-menu div.crypto-options {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #FFF;
+    overflow-y: hidden; }
+    div.wallet-menu div.crypto-options div.crypto-option {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      padding: 10px 10px 10px 15px;
+      gap: 15px;
+      cursor: pointer;
+      transition: 0.4s background-color;
+      border-bottom: 1px ridge #dbd7d7; }
+      div.wallet-menu div.crypto-options div.crypto-option:hover {
+        background-color: #d4d4f5; }
+      div.wallet-menu div.crypto-options div.crypto-option div.option-icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 35px;
+        box-shadow: 0 0 3px silver; }
+      div.wallet-menu div.crypto-options div.crypto-option div.option-data {
+        width: 100%;
+        margin-top: -2px; }
+        div.wallet-menu div.crypto-options div.crypto-option div.option-data div.crypto-name {
+          margin-bottom: 5px; }
+          div.wallet-menu div.crypto-options div.crypto-option div.option-data div.crypto-name label {
+            cursor: pointer;
+            font-size: 14px;
+            font-family: Roboto;
+            letter-spacing: 1.5px;
+            color: #343434;
+            user-select: none; }
+        div.wallet-menu div.crypto-options div.crypto-option div.option-data div.crypto-balance label {
+          cursor: pointer;
+          font-size: 14px;
+          font-family: Saira;
+          letter-spacing: 1.5px;
+          color: #767676;
+          user-select: none; }

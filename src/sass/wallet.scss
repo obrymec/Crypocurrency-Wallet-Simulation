@@ -1,0 +1,92 @@
+// Dependencies.
+@import "./basics_tools";
+
+// Animations.
+@keyframes wheader {
+    from {
+        transform: translateY(-200%);
+    } to {
+        transform: translateY(0%);
+    }
+}
+
+// Contains.
+div.cryptos-data {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+// Wallet header.
+div.wheader {
+    border-bottom: 1px solid #E5E5E5;
+    transform: translateY(-200%);
+    justify-content: stretch;
+    padding-bottom: 10px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    z-index: 0;
+    // Responsive.
+    @include responsive_object (0, 399px) {
+        padding-bottom: 0;
+    }
+    // Left data.
+    div.text-data {
+        margin-left: 30px;
+        width: 100%;
+        // Responsive.
+        @include responsive_object (0, 399px) {
+            margin-left: 22px;
+        }
+        // Title zone.
+        div.title-zone {
+            margin-bottom: 10px;
+            // label data.
+            label {
+                @include basic_text_design (18px, Roboto, #777);
+                // Responsive.
+                @include responsive_object (300px, 399px) {
+                    font-size: 14px;
+                } @include responsive_object (0, 299px) {
+                    font-size: 12px;
+                }
+            }
+        }
+        // Total amount.
+        div.total-amount {
+            // Amount data.
+            label {
+                @include basic_text_design (24px, Saira, #4B4B4B);
+                position: relative;
+                display: block;
+                z-index: 0;
+                // Responsive.
+                @include responsive_object (315px, 399px) {
+                    font-size: 16px;
+                } @include responsive_object (0, 314px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    // Graph data.
+    div.graph-data {
+        padding-right: 25px;
+        // Crypto currency graph statistics.
+        svg#graph-statistics {
+            // Circle vector.
+            circle {
+                transform-origin: center;
+                stroke-width: 3px;
+                fill: none;
+            }
+            // Responsive.
+            @include responsive_object (300px, 399px) {
+                transform: scale(0.8);
+            } @include responsive_object (0, 299px) {
+                transform: scale(0.7);
+            }
+        }
+    }
+}

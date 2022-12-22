@@ -1,0 +1,111 @@
+// Dependencies.
+@import "./basics_tools";
+
+// Message box design.
+div.message-box {
+    @include fixed_object (1);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    opacity: 0;
+    // Blur effect.
+    div.msg-blur-effect {
+        @include fixed_object (1, fixed, 0, 0, 0, 0, transparent);
+    }
+    // Global container.
+    div.msg-global-container {
+        transition-property: width, height, opacity;
+        box-shadow: 0 0 8px black;
+        background-color: white;
+        border-radius: 5px;
+        position: relative;
+        display: none;
+        z-index: 1;
+        opacity: 0;
+        width: 0;
+        // Title.
+        div.msg-title {
+            border-bottom: 1px solid silver;
+            border-top-right-radius: 5px;
+            background-color: #050541;
+            border-top-left-radius: 5px;
+            padding: 3px 5px 5px 5px;
+            position: relative;
+            z-index: 1;
+            // Label representation.
+            label {
+                @include basic_text_design (14px, Saira, #FFF, true);
+                animation: 1s textbloom 0ms forwards;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                transition: font-size 0.3s;
+                // Responsive.
+                @include responsive_object (0, 380px) {
+                    font-size: 12px;
+                }
+            }
+        }
+        // Body.
+        div.msg-body {
+            padding: 15px 12px 15px 12px;
+            justify-items: stretch;
+            align-items: center;
+            position: relative;
+            display: flex;
+            z-index: 1;
+            gap: 16px;
+            // Icon.
+            div.msg-icon svg {
+                transition-property: height width;
+                opacity: 0;
+            }
+            // Text.
+            div.msg-text {
+                white-space: pre-wrap;
+                margin-top: -4px;
+                width: 100%;
+                // Text label.
+                label {
+                    @include basic_text_design (14px, Roboto, #000);
+                    transition: font-size 0.3s;
+                    display: inline-block;
+                    // Responsive.
+                    @include responsive_object (0, 380px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        // Options.
+        div.msg-options {
+            padding: 10px 10px 10px 10px;
+            border-top: 0 solid silver;
+            justify-content: end;
+            position: relative;
+            display: none;
+            z-index: 1;
+            gap: 15px;
+            // Button.
+            button {
+                @include basic_button_design (7px 10px 5px 10px, none, #14145c, 4px, 0 0 2px #000);
+                transition-property: box-shadow, background-color, text-shadow;
+                @include basic_text_design (14px, Saira, #FFF);
+                transition-duration: 0.4s;
+                visibility: hidden;
+                width: 80px;
+                opacity: 0;
+                // Hover effect.
+                &:hover {
+                    background-color: #050541;
+                    box-shadow: 0 0 5px #000;
+                    text-shadow: 0 0 3px;
+                }
+                // Responsive.
+                @include responsive_object (0, 380px) {
+                    padding: 5px 10px 5px 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

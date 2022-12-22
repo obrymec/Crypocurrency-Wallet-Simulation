@@ -1,0 +1,106 @@
+// Dependencies.
+@import "./basics_tools";
+
+// Animations.
+@keyframes bloom {
+    0% {
+        box-shadow: 0 0 0 #fff;
+    } 10% {
+        box-shadow: 0 0 8px #050541;
+    } 100% {
+        box-shadow: 0 0 8px #fff;
+    }
+}
+@keyframes translate_up {
+    from {
+        transform: translateY(140%);
+    } to {
+        transform: translateY(0);
+    }
+}
+
+// Menubar section.
+div.menubar {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    transform: translateY(140%);
+    background-color: #FFFFFF;
+    padding: 8px 8px 8px 8px;
+    display: inline-flex;
+    align-items: stretch;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    gap: 5px;
+    left: 0;
+    // Responsive.
+    @include responsive_object (0, 399px) {
+        padding: 5px 5px 5px 5px;
+        gap: 2px;
+    }
+    // Any menu option.
+    div.menu-option {
+        width: 100%;
+        opacity: 0;
+        // Option icon zone.
+        div.icon-zone {
+            // Vector representation.
+            svg#option-icon {
+                cursor: pointer;
+                // Responsive.
+                @include responsive_object (0, 399px) {
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+        }
+        // Option text zone.
+        div.text-zone {
+            // Label representation.
+            label#option-text {
+                @include basic_text_design (14px, Roboto, #8D8D8D, false);
+                user-select: none;
+                font-weight: 400;
+                cursor: pointer;
+                // Responsive.
+                @include responsive_object (0, 399px) {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    // Wallet option zone.
+    div.wallet-option {
+        background-color: #050541;
+        box-shadow: 0 0 0 #FFFFFF;
+        justify-content: center;
+        border-radius: 25px;
+        align-items: center;
+        transform: scale(0);
+        display: flex;
+        padding: 8px;
+        height: 25px;
+        width: 25px;
+        opacity: 1;
+        // Responsive.
+        @include responsive_object (0, 399px) {
+            border-radius: 20px;
+            height: 20px;
+            width: 20px;
+        }
+        // Option icon zone.
+        div.icon-zone {
+            transform: translateY(2px);
+            // Vector representation.
+            svg#option-icon {
+                // Responsive.
+                @include responsive_object (0, 399px) {
+                    transform: translateY(-0.5px);
+                    height: 22px;
+                    width: 22px;
+                }
+            }
+        }
+    }
+}

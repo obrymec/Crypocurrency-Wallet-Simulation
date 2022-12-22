@@ -1,0 +1,60 @@
+div.activities div.aheader {
+  background-color: #050541;
+  padding: 7px 7px 7px 7px; }
+  div.activities div.aheader div.wallet-container {
+    transition: background-color 0.4s;
+    background-color: #43435B;
+    padding: 7px 7px 7px 10px;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 12px; }
+    div.activities div.aheader div.wallet-container:hover {
+      background-color: #5c5c75; }
+    @media only screen and (min-width: 0) and (max-width: 299px) {
+      div.activities div.aheader div.wallet-container {
+        padding: 7px 7px 7px 7px;
+        gap: 8px; } }
+    div.activities div.aheader div.wallet-container div.wicon {
+      padding: 5px 7px 5px 7px;
+      background-color: #FFF;
+      transform: scale(1);
+      border-radius: 25px; }
+      div.activities div.aheader div.wallet-container div.wicon svg {
+        transform: translateY(2px); }
+      @media only screen and (min-width: 0) and (max-width: 299px) {
+        div.activities div.aheader div.wallet-container div.wicon {
+          transform: scale(0.8); } }
+    div.activities div.aheader div.wallet-container div.wdata {
+      width: 100%; }
+      div.activities div.aheader div.wallet-container div.wdata div.data-title {
+        margin-bottom: 3px; }
+        div.activities div.aheader div.wallet-container div.wdata div.data-title label {
+          font-size: 14px;
+          font-family: Roboto;
+          letter-spacing: 1.5px;
+          color: #FFF;
+          font-weight: bold;
+          user-select: none;
+          cursor: pointer; }
+          @media only screen and (min-width: 0) and (max-width: 299px) {
+            div.activities div.aheader div.wallet-container div.wdata div.data-title label {
+              font-size: 12px; } }
+        @media only screen and (min-width: 0) and (max-width: 299px) {
+          div.activities div.aheader div.wallet-container div.wdata div.data-title {
+            margin-bottom: 0; } }
+      div.activities div.aheader div.wallet-container div.wdata div.wamount label {
+        font-size: 14px;
+        font-family: Saira;
+        letter-spacing: 1.5px;
+        color: #FFF;
+        user-select: none;
+        cursor: pointer; }
+        @media only screen and (min-width: 0) and (max-width: 299px) {
+          div.activities div.aheader div.wallet-container div.wdata div.wamount label {
+            font-size: 12px; } }
+    div.activities div.aheader div.wallet-container div.dropdown-icon svg {
+      transform: translate(-12px, 12px);
+      cursor: pointer; }

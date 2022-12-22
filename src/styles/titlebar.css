@@ -1,0 +1,47 @@
+@keyframes translate {
+  from {
+    transform: translateY(-140%); }
+  to {
+    transform: translateY(0); } }
+div.titlebar {
+  box-shadow: 0 4px 10px #00000040;
+  transform: translateY(-140%);
+  padding: 10px 0 10px 0;
+  background: #050541;
+  display: inline-flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  top: 0; }
+  div.titlebar div.settings-zone {
+    animation: 0.1s fadeout 0.2s forwards;
+    margin-left: 20px;
+    opacity: 0; }
+    div.titlebar div.settings-zone svg {
+      cursor: pointer;
+      fill: #FFF; }
+    @media only screen and (min-width: 0) and (max-width: 299px) {
+      div.titlebar div.settings-zone {
+        margin-left: 15px; } }
+  div.titlebar div.title-zone {
+    margin-left: 40px; }
+    @media only screen and (min-width: 0) and (max-width: 299px) {
+      div.titlebar div.title-zone {
+        margin-left: 20px; } }
+    div.titlebar div.title-zone label#title {
+      letter-spacing: 1.5px;
+      font-family: Saira;
+      font-size: 16px;
+      user-select: none;
+      color: #FFF;
+      animation: 1s textbloom 0ms forwards;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      text-shadow: 0 0 5px #fff;
+      user-select: none;
+      font-weight: 700; }
+      @media only screen and (min-width: 0) and (max-width: 299px) {
+        div.titlebar div.title-zone label#title {
+          font-size: 14px; } }

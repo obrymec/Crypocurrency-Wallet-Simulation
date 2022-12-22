@@ -1,0 +1,53 @@
+div.crypto-row {
+  transition-property: background-color border-right;
+  border-bottom: 1px ridge #dbd7d7;
+  border-right: 0 ridge #050541;
+  padding: 10px 10px 10px 15px;
+  transition-duration: 0.4s;
+  background-color: white;
+  justify-content: center;
+  align-items: stretch;
+  cursor: pointer;
+  display: flex;
+  opacity: 0;
+  gap: 15px; }
+  div.crypto-row:hover {
+    border-right: 10px ridge #050541;
+    background-color: #d4d4f5; }
+    div.crypto-row:hover div.row-icon > img {
+      box-shadow: 0 0 5px #000; }
+    div.crypto-row:hover div.row-data div.row-name label, div.crypto-row:hover div.row-data div.row-balance label {
+      font-weight: bold;
+      color: #050541; }
+  div.crypto-row div.row-icon img {
+    background-image: radial-gradient(white, 25%, #eeeaea, white);
+    box-shadow: 0 0 3px silver;
+    transition: box-shadow 0.4s;
+    background-size: 100%;
+    border-radius: 35px;
+    size: 100%; }
+  div.crypto-row div.row-data {
+    margin-top: -2px;
+    width: 100%; }
+    div.crypto-row div.row-data div.row-name {
+      margin-bottom: 5px; }
+      div.crypto-row div.row-data div.row-name label {
+        letter-spacing: 1.5px;
+        font-family: Roboto;
+        font-size: 15px;
+        user-select: none;
+        color: #343434;
+        cursor: pointer; }
+        @media only screen and (min-width: 0) and (max-width: 299px) {
+          div.crypto-row div.row-data div.row-name label {
+            font-size: 12px; } }
+    div.crypto-row div.row-data div.row-balance label {
+      letter-spacing: 1.5px;
+      font-family: Saira;
+      font-size: 15px;
+      user-select: none;
+      color: #767676;
+      cursor: pointer; }
+      @media only screen and (min-width: 0) and (max-width: 299px) {
+        div.crypto-row div.row-data div.row-balance label {
+          font-size: 12px; } }

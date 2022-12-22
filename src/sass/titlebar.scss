@@ -1,0 +1,63 @@
+// Dependencies.
+@import "./basics_tools";
+
+// Animations.
+@keyframes translate {
+    from {
+        transform: translateY(-140%);
+    } to {
+        transform: translateY(0);
+    }
+}
+
+// Titlebar section.
+div.titlebar {
+    box-shadow: 0 4px 10px #00000040;
+    transform: translateY(-140%);
+    padding: 10px 0 10px 0;
+    background: #050541;
+    display: inline-flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+    // Settings icon zone.
+    div.settings-zone {
+        animation: 0.1s fadeout 0.2s forwards;
+        margin-left: 20px;
+        opacity: 0;
+        // Vector image.
+        svg {
+            cursor: pointer;
+            fill: #FFF;
+        }
+        // Responsive.
+        @include responsive_object (0, 299px) {
+            margin-left: 15px;
+        }
+    }
+    // Title zone.
+    div.title-zone {
+        margin-left: 40px;
+        // Responsive.
+        @include responsive_object (0, 299px) {
+            margin-left: 20px;
+        }
+        // Label text.
+        label#title {
+            @include basic_text_design (16px, Saira, #FFF, false);
+            animation: 1s textbloom 0ms forwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            text-shadow: 0 0 5px #fff;
+            user-select: none;
+            font-weight: 700;
+            // Responsive.
+            @include responsive_object (0, 299px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

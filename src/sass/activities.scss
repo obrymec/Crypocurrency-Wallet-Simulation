@@ -1,0 +1,88 @@
+// Dependencies.
+@import "./basics_tools";
+
+// Activities.
+div.activities {
+    // Header.
+    div.aheader {
+        background-color:#050541;
+        padding: 7px 7px 7px 7px;
+        // Wallet container.
+        div.wallet-container {
+            transition: background-color 0.4s;
+            background-color: #43435B;
+            padding: 7px 7px 7px 10px;
+            justify-content: center;
+            align-items: stretch;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            gap: 12px;
+            // Hover effect.
+            &:hover {
+                background-color: #5c5c75;
+            }
+            // Responsive.
+            @include responsive_object (0, 299px) {
+                padding: 7px 7px 7px 7px;
+                gap: 8px;
+            }
+            // Wallet icon.
+            div.wicon {
+                padding: 5px 7px 5px 7px;
+                background-color: #FFF;
+                transform: scale(1.0);
+                border-radius: 25px;
+                // Vector image.
+                svg {
+                    transform: translateY(2px);
+                }
+                // Responsive.
+                @include responsive_object (0, 299px) {
+                    transform: scale(0.8);
+                }
+            }
+            // Wallet small data.
+            div.wdata {
+                width: 100%;
+                // Data title.
+                div.data-title {
+                    margin-bottom: 3px;
+                    // Label representation.
+                    label {
+                        @include basic_text_design (14px, Roboto, #FFF, true);
+                        cursor: pointer;
+                        // Responsive.
+                        @include responsive_object (0, 299px) {
+                            font-size: 12px;
+                        }
+                    }
+                    // Responsive.
+                    @include responsive_object (0, 299px) {
+                        margin-bottom: 0;
+                    }
+                }
+                // Wallet amount.
+                div.wamount {
+                    // Label representation.
+                    label {
+                        @include basic_text_design (14px, Saira, #FFF);
+                        cursor: pointer;
+                        // Responsive.
+                        @include responsive_object (0, 299px) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            // Wallet dropdown icon.
+            div.dropdown-icon {
+                // Svg representation.
+                svg {
+                    transform: translate(-12px, 12px);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

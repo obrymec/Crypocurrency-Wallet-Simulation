@@ -1,0 +1,98 @@
+@keyframes text_blink {
+  from {
+    text-shadow: 0 0 0 #fff;
+    color: #343434; }
+  to {
+    text-shadow: 0 0 3px #050541;
+    color: #fff; } }
+div.crypto-currency {
+  border-bottom: 1px solid #E5E5E5;
+  transition: 0.4s background-color;
+  padding: 15px 20px 15px 20px;
+  background-color: white;
+  opacity: 0; }
+  div.crypto-currency:hover {
+    background-color: #f0f0f0; }
+  @media only screen and (min-width: 0) and (max-width: 399px) {
+    div.crypto-currency {
+      padding: 10px; } }
+  div.crypto-currency div.header {
+    display: inline-flex;
+    align-items: center; }
+    div.crypto-currency div.header div.img-zone {
+      box-shadow: 0 0 3px silver;
+      transform: rotate(0);
+      border-radius: 25px;
+      height: 30px;
+      width: 30px; }
+    div.crypto-currency div.header div.name-zone {
+      margin-left: 10px; }
+      div.crypto-currency div.header div.name-zone label {
+        letter-spacing: 1.5px;
+        font-family: Roboto;
+        font-size: 18px;
+        user-select: none;
+        color: #343434; }
+        @media only screen and (min-width: 0) and (max-width: 299px) {
+          div.crypto-currency div.header div.name-zone label {
+            font-size: 14px; } }
+      div.crypto-currency div.header div.name-zone div.hider {
+        visibility: visible; }
+  div.crypto-currency div.body {
+    justify-content: space-between;
+    margin-top: -5px;
+    display: flex; }
+    div.crypto-currency div.body div.left-data {
+      border-right: 1px solid #E5E5E5;
+      padding: 5px 5px 5px 42px;
+      width: 100%; }
+      div.crypto-currency div.body div.left-data div.amount-zone label {
+        letter-spacing: 1.5px;
+        font-family: Saira;
+        font-size: 15px;
+        user-select: none;
+        color: #2A2A2A;
+        text-shadow: 0 0 0 #fff; }
+        @media only screen and (min-width: 0) and (max-width: 299px) {
+          div.crypto-currency div.body div.left-data div.amount-zone label {
+            font-size: 12px; } }
+      div.crypto-currency div.body div.left-data div.balance-zone label {
+        letter-spacing: 1.5px;
+        font-family: Saira;
+        font-size: 12px;
+        user-select: none;
+        color: #767676; }
+        @media only screen and (min-width: 0) and (max-width: 299px) {
+          div.crypto-currency div.body div.left-data div.balance-zone label {
+            font-size: 10px; } }
+    div.crypto-currency div.body div.right-data {
+      padding: 5px 5px 5px 8px;
+      width: 100%; }
+      div.crypto-currency div.body div.right-data div.worth-zone label {
+        letter-spacing: 1.5px;
+        font-family: Saira;
+        font-size: 15px;
+        user-select: none;
+        color: #2A2A2A; }
+        @media only screen and (min-width: 0) and (max-width: 299px) {
+          div.crypto-currency div.body div.right-data div.worth-zone label {
+            font-size: 12px; } }
+      div.crypto-currency div.body div.right-data div.benefice-zone label#gain {
+        letter-spacing: 1.5px;
+        font-family: Saira;
+        font-size: 12px;
+        user-select: none;
+        color: #007F00; }
+        @media only screen and (min-width: 0) and (max-width: 299px) {
+          div.crypto-currency div.body div.right-data div.benefice-zone label#gain {
+            font-size: 10px; } }
+      div.crypto-currency div.body div.right-data div.benefice-zone label#hour {
+        letter-spacing: 1.5px;
+        font-family: Saira;
+        font-size: 12px;
+        user-select: none;
+        color: #767676;
+        margin-left: 5px; }
+        @media only screen and (min-width: 0) and (max-width: 299px) {
+          div.crypto-currency div.body div.right-data div.benefice-zone label#hour {
+            font-size: 10px; } }

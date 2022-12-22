@@ -1,0 +1,51 @@
+// Label basic design.
+@mixin basic_text_design ($_size: 16px, $_police: verdana, $_color: #000, $_bold: false) {
+	letter-spacing: 1.5px;
+	font-family: $_police;
+	font-size: $_size;
+	user-select: none;
+	color: $_color;
+	@if ($_bold) {
+		font-weight: bold;
+	}
+}
+
+// Responsive object.
+@mixin responsive_object ($_min_width, $_max_width) {
+	// Responsive.
+	@media only screen and (min-width: $_min_width) and (max-width: $_max_width) {
+		@content;
+	}
+}
+
+// Input basic design.
+@mixin basic_input_design ($width: 250px, $height: 30px, $padding: 10px, $radius: 50px) {
+	border-radius: $radius;
+	padding: $padding;
+    height: $height;
+	width: $width;
+	outline: none;
+	border: none;
+}
+
+// Fixed elements.
+@mixin fixed_object ($zindex: 0, $pos: fixed, $top: 0, $right: 0, $bottom: 0, $left: 0, $color: rgba(0, 0, 0, 0.6)) {
+	background-color: $color;
+	z-index: $zindex;
+	bottom: $bottom;
+	position: $pos;
+	right: $right;
+	left: $left;
+	top: $top;
+}
+
+// Basic button design.
+@mixin basic_button_design ($padding: 10px, $border: none, $color: skyblue, $radius: 5px, $shadow: 0 2px 3px black) {
+	background-color: $color;
+	border-radius: $radius;
+	box-shadow: $shadow;
+	padding: $padding;
+	border: $border;
+	cursor: pointer;
+	outline: none;
+}

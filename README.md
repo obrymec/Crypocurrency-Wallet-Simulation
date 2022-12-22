@@ -1,0 +1,67 @@
+# Cryptocurrency Wallet Simulation
+![](https://img.shields.io/badge/react-%5E10.2.0-yellowgreen)
+![](https://img.shields.io/badge/javascript-ES6-orange)
+![](https://img.shields.io/badge/css-%203-lightgrey)
+![](https://img.shields.io/badge/sass-3.7.4-yellow)
+![](https://img.shields.io/badge/html-%205-blue)
+
+This project is an academy project. This's made to evaluate React framework performances, get more knowledge about how class components work and test my capacity to make some advanced user interfaces without any CSS packages like Bootstrap or TailWind. It's front-end only. No any back-end API is called. The main goal of this project is to build a cryptocurrency balance variation within a wallet using native web language on pages's style sheets.
+
+## Final result
+This is the final result of the project:<br/><br/>
+![](./render/render-1.gif)
+![](./render/render-2.gif)
+![](./render/render-3.png)
+![](./render/render-4.png)
+![](./render/render-5.png)
+
+## Project installation
+### <u>Install curl</u>:
+```sh
+sudo apt install curl
+```
+
+### <u>Install nodejs</u>:
+```sh
+cd ~;\
+curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh;\
+sudo bash /tmp/nodesource_setup.sh;\
+sudo apt install nodejs;\
+node -v
+```
+
+### <u>Install yarn with npm</u>:
+NPM (Node Package Manager) is the default program that is automatically installed on Nodejs installation. You can use NPM directly when Nodejs is already installed.
+```sh
+sudo npm install yarn --global
+```
+
+### <u>React installation</u>:
+If you don't have React in your computer, you can install it with npm or yarn like this:
+```sh
+sudo yarn global add create-react-app
+```
+
+### <u>Project cloning</u>:
+```sh
+git clone git@github.com:obrymec/Crypocurrency-Wallet-Simulation.git cryptocurrency-wallet-simulation/
+```
+
+### <u>Install project dependencies</u>:
+Go to the root folder of the project and run:
+```sh
+yarn install
+```
+
+### <u>Run project</u>:
+Go to the root folder of the project and run:
+```sh
+yarn start
+```
+
+Go to your favorite browser and tap on the search bar the following link:
+```sh
+http://localhost:3000/
+```
+
+Enjoy :)

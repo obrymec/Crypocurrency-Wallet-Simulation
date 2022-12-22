@@ -1,0 +1,74 @@
+// Dependencies.
+@import "./basics_tools";
+
+// Activities crypto currency items.
+div.crypto-row {
+    transition-property: background-color border-right;
+    border-bottom: 1px ridge rgb(219, 215, 215);
+    border-right: 0 ridge #050541;
+    padding: 10px 10px 10px 15px;
+    transition-duration: 0.4s;
+    background-color: white;
+    justify-content: center;
+    align-items: stretch;
+    cursor: pointer;
+    display: flex;
+    opacity: 0;
+    gap: 15px;
+    // Hover effect.
+    &:hover {
+        border-right: 10px ridge #050541;
+        background-color: #d4d4f5;
+        // Matrial image.
+        div.row-icon > img {
+            box-shadow: 0 0 5px #000;
+        }
+        // Label representation.
+        div.row-data div.row-name label, div.row-data div.row-balance label {
+            font-weight: bold;
+            color: #050541;
+        }
+    }
+    // Crypto currency icon.
+    div.row-icon {
+        // Matrixial image.
+        img {
+            background-image: radial-gradient(white, 25%, rgb(238, 234, 234), white);
+            box-shadow: 0 0 3px silver;
+            transition: box-shadow 0.4s;
+            background-size: 100%;
+            border-radius: 35px;
+            size: 100%;
+        }
+    }
+    // Crypto currency data.
+    div.row-data {
+        margin-top: -2px;
+        width: 100%;
+        // Crypto currency name.
+        div.row-name {
+            margin-bottom: 5px;
+            // Label representation.
+            label {
+                @include basic_text_design (15px, Roboto, #343434);
+                cursor: pointer;
+                // Responsive.
+                @include responsive_object (0, 299px) {
+                    font-size: 12px;
+                }
+            }
+        }
+        // Crypto curency balance.
+        div.row-balance {
+            // Label representation.
+            label {
+                @include basic_text_design (15px, Saira, #767676);
+                cursor: pointer;
+                // Responsive.
+                @include responsive_object (0, 299px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
