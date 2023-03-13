@@ -5,7 +5,7 @@
 ![](https://img.shields.io/badge/sass-3.7.4-yellow)
 ![](https://img.shields.io/badge/html-%205-blue)
 
-This project is an academy project. This's made to evaluate React framework performances, get more knowledge about how class components work and test my capacity to make some advanced user interfaces without any CSS packages like Bootstrap or TailWind. It's front-end only. No any back-end API is called. The main goal of this project is to build a cryptocurrency balance variation within a wallet using native web language on pages's style sheets. This app is responsive. You can open it within a small screen.
+This project is an academy project. This's made to evaluate React framework performances, get more knowledge about how class components work and test my capacity to make some advanced user interfaces without any CSS packages like Bootstrap or Tailwind. It's front-end only. No any back-end API is called. The main goal of this project is to build a cryptocurrency balance variation within a wallet using native web language on pages's style sheets. This app is responsive. You can open it within a small screen.
 
 ## Final result
 This is the final result of the project:<br/><br/>
